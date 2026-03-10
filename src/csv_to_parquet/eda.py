@@ -39,13 +39,13 @@ def main():
     #Paths
     PROJECT_ROOT = Path(__file__).parent.parent
     input_dir = PROJECT_ROOT / "data" / "processed"
-    input_file = input_dir / "olist_products_dataset.parquet"
+    input_file = input_dir / "olist_order_items_dataset.parquet"
 
     #Pipeline
     print("Loading data...")
     df = load_data(input_file)
 
-    print("Performing basic EDA...")
+    print(f"Performing basic EDA on {input_file.name}...")
     basic_eda(df)
 
     print("\n✅ Finished!")
