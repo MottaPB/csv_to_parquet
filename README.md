@@ -4,7 +4,7 @@ Automated pipeline to convert CSV files into Parquet
 
 ## 🎯 Functionalities
 
-![alt text](image.png)
+![alt text](images/pipeline.png)
 
 - ✅ **Dependencies management with uv**: Using UV to manage packages instead of pip
     - Since the plan is to use this initiall setup on future data pipelines using Airflow, uv is a goo choice because:
